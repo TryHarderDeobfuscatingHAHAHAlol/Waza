@@ -928,7 +928,7 @@ autosellv1:AddSwitch("Auto Sell Ice Ice", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Dark Golem", function(state)
+autosellv1:AddSwitch("Auto Sell Slitherman", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -936,7 +936,7 @@ autosellv1:AddSwitch("Auto Sell Dark Golem", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Dark Golem"
+                [2] = "Slitherman"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -951,7 +951,7 @@ autosellv1:AddSwitch("Auto Sell Dark Golem", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Blue Hedgehog", function(state)
+autosellv1:AddSwitch("Auto Sell Smiley", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -959,7 +959,7 @@ autosellv1:AddSwitch("Auto Sell Blue Hedgehog", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Blue Hedgehog"
+                [2] = "Smiley"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -974,7 +974,7 @@ autosellv1:AddSwitch("Auto Sell Blue Hedgehog", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Killer Pheonix", function(state)
+autosellv1:AddSwitch("Auto Sell Mr. Serious", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -982,7 +982,7 @@ autosellv1:AddSwitch("Auto Sell Killer Pheonix", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Killer Pheonix"
+                [2] = "Mr. Serious
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -1020,6 +1020,29 @@ autosellv1:AddSwitch("Auto Sell Mask Of Gold", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell A. Gnatomy", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "A. Gnatomy"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
 autosellv1:AddSwitch("Auto Sell Sir Flame", function(state)
     getgenv().AutoSell = state
     
@@ -1029,6 +1052,75 @@ autosellv1:AddSwitch("Auto Sell Sir Flame", function(state)
             local args = {
                 [1] = "sellPet",
                 [2] = "Sir Flame"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Dark Soul Birdie", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Dark Soul Birdie"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Shadow Eclipse Leviathan", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Shadow Eclipse Leviathan"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Shadow Edge Kitty", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Shadows Edge Kitty"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -1093,7 +1185,7 @@ end)
 local autoEvolveEnabled = false
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Golden Sun Pegasus", function(state)
+autoevolvedv1:AddSwitch("Auto Evolve Hank", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1128,7 +1220,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Golden Sun Pegasus", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("golden sun pegasus") then
+                                if pet.Name:lower():find("Hank") then
                                     foundPet = pet
                                     break
                                 end
@@ -1159,7 +1251,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Golden Sun Pegasus", function(state)
 end)
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Darkstorm Elemental Hydra", function(state)
+autoevolvedv1:AddSwitch("Auto Evolve Gold Warrior", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1194,7 +1286,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Darkstorm Elemental Hydra", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("darkstorm elemental hydra") then
+                                if pet.Name:lower():find("Gold Warrior") then
                                     foundPet = pet
                                     break
                                 end
@@ -1225,7 +1317,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Darkstorm Elemental Hydra", function(state)
 end)
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Unlimited Secrets Master Dragon", function(state)
+autoevolvedv1:AddSwitch("Auto Evolve Sky Hawk", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1260,7 +1352,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Unlimited Secrets Master Dragon", function(
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("unlimited secrets master dragon") then
+                                if pet.Name:lower():find("Sky Hawk") then
                                     foundPet = pet
                                     break
                                 end
@@ -1291,7 +1383,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Unlimited Secrets Master Dragon", function(
 end)
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Glitch: Awakened Nighthunter", function(state)
+autoevolvedv1:AddSwitch("Auto Evolve Killer Pheonix", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1326,7 +1418,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Glitch: Awakened Nighthunter", function(sta
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("glitch: awakened nighthunter") then
+                                if pet.Name:lower():find("Killer Pheonix") then
                                     foundPet = pet
                                     break
                                 end
@@ -1357,7 +1449,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Glitch: Awakened Nighthunter", function(sta
 end)
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Rising Millenium Hydra", function(state)
+autoevolvedv1:AddSwitch("Auto Evolve Dual Chaos Birdies", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1392,7 +1484,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Rising Millenium Hydra", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("rising millenium hydra") then
+                                if pet.Name:lower():find("Dual Chaos Birdies") then
                                     foundPet = pet
                                     break
                                 end
@@ -1423,7 +1515,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Rising Millenium Hydra", function(state)
 end)
 
 -- Add a functional switch into the Automation tab
-autoevolvedv1:AddSwitch("Auto Evolve Rising Dawn Midnight Wyvern", function(state)
+autoevolvedv1:AddSwitch("SENSEI: Legend Of Weakness", function(state)
     autoEvolveEnabled = state
     
     if autoEvolveEnabled then
@@ -1458,7 +1550,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Rising Dawn Midnight Wyvern", function(stat
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("rising dawn midnight wyvern") then
+                                if pet.Name:lower():find("SENSEI: Legend Of Weakness") then
                                     foundPet = pet
                                     break
                                 end
