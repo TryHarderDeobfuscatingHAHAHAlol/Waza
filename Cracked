@@ -758,7 +758,7 @@ local mainTab = window:AddTab("Crystals")
 
 -- State variables
 local autoOpenActive = false
-local selectedCrystal = "Battle Legends" Crystal" -- Default tracking option
+local selectedCrystal = "Battle Legends Crystal" -- Default tracking option
 
 -- Optimized internal nil asset scanner
 local function getNil(name, class)
@@ -839,7 +839,7 @@ autosellv1:AddSwitch("Auto Sell Dual Dynasty Dogs", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Dual Chaos Birdies", function(state)
+autosellv1:AddSwitch("Auto Sell Alien Girl", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -847,7 +847,7 @@ autosellv1:AddSwitch("Auto Sell Dual Chaos Birdies", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Dual Chaos Birdies"
+                [2] = "Alien Girl"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -862,7 +862,7 @@ autosellv1:AddSwitch("Auto Sell Dual Chaos Birdies", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Twin Element Birdies", function(state)
+autosellv1:AddSwitch("Auto Sell Green Fly", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -870,7 +870,7 @@ autosellv1:AddSwitch("Auto Sell Twin Element Birdies", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Twin Element Birdies"
+                [2] = "Green Fly"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -885,7 +885,7 @@ autosellv1:AddSwitch("Auto Sell Twin Element Birdies", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Dual Destiny Shadow Dragon", function(state)
+autosellv1:AddSwitch("Auto Sell Ice Ice", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -893,7 +893,7 @@ autosellv1:AddSwitch("Auto Sell Dual Destiny Shadow Dragon", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Dual Destiny Shadow Dragon"
+                [2] = "Ice Ice"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -908,7 +908,7 @@ autosellv1:AddSwitch("Auto Sell Dual Destiny Shadow Dragon", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Corrupted Elements Hydra", function(state)
+autosellv1:AddSwitch("Auto Sell Slitherman", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -916,7 +916,7 @@ autosellv1:AddSwitch("Auto Sell Corrupted Elements Hydra", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Corrupted Elements Hydra"
+                [2] = "Slitherman"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -931,7 +931,7 @@ autosellv1:AddSwitch("Auto Sell Corrupted Elements Hydra", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Darkstorm Elemental Hydra", function(state)
+autosellv1:AddSwitch("Auto Sell Smiley", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -939,7 +939,7 @@ autosellv1:AddSwitch("Auto Sell Darkstorm Elemental Hydra", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Darkstorm Elemental Hydra"
+                [2] = "Smiley"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -954,7 +954,7 @@ autosellv1:AddSwitch("Auto Sell Darkstorm Elemental Hydra", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Golden Sun Pegasus", function(state)
+autosellv1:AddSwitch("Auto Sell Mask Of Gold", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -962,7 +962,7 @@ autosellv1:AddSwitch("Auto Sell Golden Sun Pegasus", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Golden Sun Pegasus"
+                [2] = "Mask Of Gold"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -977,7 +977,7 @@ autosellv1:AddSwitch("Auto Sell Golden Sun Pegasus", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Rising Millenium Hydra", function(state)
+autosellv1:AddSwitch("Auto Sell Sir Flame", function(state)
     getgenv().AutoSell = state
     
     -- When the switch is turned ON, start a repeating loop
@@ -985,7 +985,7 @@ autosellv1:AddSwitch("Auto Sell Rising Millenium Hydra", function(state)
         while getgenv().AutoSell do
             local args = {
                 [1] = "sellPet",
-                [2] = "Rising Millenium Hydra"
+                [2] = "Sir Flame"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
