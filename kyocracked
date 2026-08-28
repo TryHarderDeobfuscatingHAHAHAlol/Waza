@@ -1220,7 +1220,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Hank", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("Hank") then
+                                if pet.Name:lower():find("hank") then
                                     foundPet = pet
                                     break
                                 end
@@ -1286,7 +1286,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Gold Warrior", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("Gold Warrior") then
+                                if pet.Name:lower():find("gold warrior") then
                                     foundPet = pet
                                     break
                                 end
@@ -1352,7 +1352,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Sky Hawk", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("Sky Hawk") then
+                                if pet.Name:lower():find("sky hawk") then
                                     foundPet = pet
                                     break
                                 end
@@ -1418,7 +1418,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Killer Pheonix", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("Killer Pheonix") then
+                                if pet.Name:lower():find("killer pheonix") then
                                     foundPet = pet
                                     break
                                 end
@@ -1484,7 +1484,7 @@ autoevolvedv1:AddSwitch("Auto Evolve Dual Chaos Birdies", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("Dual Chaos Birdies") then
+                                if pet.Name:lower():find("dual chaos birdies") then
                                     foundPet = pet
                                     break
                                 end
@@ -1550,7 +1550,7 @@ autoevolvedv1:AddSwitch("SENSEI: Legend Of Weakness", function(state)
                         if not autoEvolveEnabled then break end
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
-                                if pet.Name:lower():find("SENSEI: Legend Of Weakness") then
+                                if pet.Name:lower():find("sensei: legend of weakness") then
                                     foundPet = pet
                                     break
                                 end
