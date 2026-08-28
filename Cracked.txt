@@ -596,8 +596,8 @@ mainTab:AddSwitch("Fast Reps Push Ups", function(state)
     end
 end)
 
--- SWITCH 2: Auto Rebirth (500)
-mainTab:AddSwitch("Fast Rebirth (500)", function(state)
+-- SWITCH 2: Auto Rebirth (10Kx)
+mainTab:AddSwitch("Fast Rebirth (10Kx)", function(state)
     rebirthActive = state
     
     if rebirthActive then
@@ -608,7 +608,7 @@ mainTab:AddSwitch("Fast Rebirth (500)", function(state)
                     
                     local args = {
                         [1] = "massRebirthRequest",
-                        [2] = 500
+                        [2] = 10Kx
                     }
                     
                     rEvents.rebirthRemote:InvokeServer(unpack(args))
@@ -781,10 +781,6 @@ end)
 crystalDropdown:Add("Chaos Crystal")
 crystalDropdown:Add("Dark Nebula Crystal")
 crystalDropdown:Add("Battle Legends Crystal")
-crystalDropdown:Add("Infinity Void Crystal")
-crystalDropdown:Add("Unlimited Secrets Crystal")
-crystalDropdown:Add("Ultra Shockwave Crystal")
-crystalDropdown:Add("Secret Void Crystal")
 crystalDropdown:Add("Jungle Crystal")
 crystalDropdown:Add("Galaxy Oracle Crystal")
 crystalDropdown:Add("Muscle Elite Crystal")
