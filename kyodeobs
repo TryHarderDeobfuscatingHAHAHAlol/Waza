@@ -882,29 +882,6 @@ autosellv1:AddSwitch("Auto Sell Alien Girl", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Green-Fly", function(state)
-    getgenv().AutoSell = state
-    
-    -- When the switch is turned ON, start a repeating loop
-    task.spawn(function()
-        while getgenv().AutoSell do
-            local args = {
-                [1] = "sellPet",
-                [2] = "Green-Fly"
-            }
-            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
-            
-            if remote then
-                remote:FireServer(unpack(args))
-            end
-            
-            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
-            task.wait(0.1) 
-        end
-    end)
-end)
-
--- The specific sellPet remote script wrapped inside an AddSwitch loop
 autosellv1:AddSwitch("Auto Sell Ice Ice", function(state)
     getgenv().AutoSell = state
     
@@ -974,29 +951,6 @@ autosellv1:AddSwitch("Auto Sell Smiley", function(state)
 end)
 
 -- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell Mr. Serious", function(state)
-    getgenv().AutoSell = state
-    
-    -- When the switch is turned ON, start a repeating loop
-    task.spawn(function()
-        while getgenv().AutoSell do
-            local args = {
-                [1] = "sellPet",
-                [2] = "Mr. Serious
-            }
-            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
-            
-            if remote then
-                remote:FireServer(unpack(args))
-            end
-            
-            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
-            task.wait(0.1) 
-        end
-    end)
-end)
-
--- The specific sellPet remote script wrapped inside an AddSwitch loop
 autosellv1:AddSwitch("Auto Sell Mask Of Gold", function(state)
     getgenv().AutoSell = state
     
@@ -1006,29 +960,6 @@ autosellv1:AddSwitch("Auto Sell Mask Of Gold", function(state)
             local args = {
                 [1] = "sellPet",
                 [2] = "Mask Of Gold"
-            }
-            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
-            
-            if remote then
-                remote:FireServer(unpack(args))
-            end
-            
-            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
-            task.wait(0.1) 
-        end
-    end)
-end)
-
--- The specific sellPet remote script wrapped inside an AddSwitch loop
-autosellv1:AddSwitch("Auto Sell A. Gnatomy", function(state)
-    getgenv().AutoSell = state
-    
-    -- When the switch is turned ON, start a repeating loop
-    task.spawn(function()
-        while getgenv().AutoSell do
-            local args = {
-                [1] = "sellPet",
-                [2] = "A. Gnatomy"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
