@@ -5,7 +5,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- Dynamically generate the window title with a welcome message
-local windowTitle = "Kyo~Private | | | Sup " .. LocalPlayer.DisplayName
+local windowTitle = "Kyo~Private - Cracked X Updated By Kenzouu | | | SAPAKAN NA " .. LocalPlayer.DisplayName
 
 local window = library:AddWindow(windowTitle, {
     main_color = Color3.fromRGB(41, 74, 122),
