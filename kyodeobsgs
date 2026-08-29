@@ -596,8 +596,8 @@ mainTab:AddSwitch("Fast Reps Push Ups", function(state)
     end
 end)
 
--- SWITCH 2: Auto Rebirth (10Kx)
-mainTab:AddSwitch("Fast Rebirth (10Kx)", function(state)
+-- SWITCH 2: Auto Rebirth (1000)
+mainTab:AddSwitch("Fast Rebirth (1000)", function(state)
     rebirthActive = state
     
     if rebirthActive then
@@ -608,7 +608,7 @@ mainTab:AddSwitch("Fast Rebirth (10Kx)", function(state)
                     
                     local args = {
                         [1] = "massRebirthRequest",
-                        [2] = 10Kx
+                        [2] = 1000
                     }
                     
                     rEvents.rebirthRemote:InvokeServer(unpack(args))
