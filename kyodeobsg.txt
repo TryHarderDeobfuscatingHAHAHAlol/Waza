@@ -603,15 +603,16 @@ mainTab:AddSwitch("Mass Rebirth (10000)", function(state)
     if rebirthActive then
         task.spawn(function()
             while rebirthActive do
+                local replicatedStorage = game:GetService("ReplicatedStorage")
                 local rEvents = replicatedStorage:FindFirstChild("rEvents")
+                
                 if rEvents and rEvents:FindFirstChild("rebirthRemote") then
-                    
                     local args = {
-                        [1] = "massRebirthRequest",
+                        [1] = "rebirthRequest",
                         [2] = 10000
                     }
                     
-                    rEvents.rebirthRemote:InvokeServer(unpack(args))
+                    rEvents.rebirthRemote:FireServer(unpack(args))
                 end
                 task.wait(0.1) 
             end
