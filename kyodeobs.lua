@@ -820,6 +820,10 @@ local crystalDropdown = mainTab:AddDropdown("Select Crystal", function(choice)
 end)
 
 -- Populating dropdown items following strict Elerium structural formats
+crystalDropdown:Add("Infernal Crystal")
+crystalDropdown:Add("Insufficient Master Crystal")
+crystalDropdown:Add("Godly Crystal")
+crystalDropdown:Add("Sunken Crystal")
 crystalDropdown:Add("Weakness Crystal")
 crystalDropdown:Add("Chaos Crystal")
 crystalDropdown:Add("Dark Nebula Crystal")
@@ -1052,6 +1056,282 @@ autosellv1:AddSwitch("Auto Sell Shadows Edge Kitty", function(state)
             local args = {
                 [1] = "sellPet",
                 [2] = "Shadows Edge Kitty"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Coral Yellow", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Coral Yellow"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Coral Blue", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Coral Blue"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Coral Green", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Coral Green"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Coral Red", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Coral Red"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Dual Peace Dragon", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Dual Peace Dragon"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Starstrike Light Seeker", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Starstrike Light Seeker"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Golden Horizon Kitty", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Golden Horizon Kitty"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Mini Sensei", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Mini Sensei"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Inner Peace Birdie", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Inner Peace Birdie"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Awaken Chaos Pegasus", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Awaken Chaos Pegasus"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Elemental Inferno Dragon", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Elemental Inferno Dragon"
+            }
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
+            
+            if remote then
+                remote:FireServer(unpack(args))
+            end
+            
+            -- Adjust this delay (in seconds) so the server doesn't kick you for spamming
+            task.wait(0.1) 
+        end
+    end)
+end)
+
+-- The specific sellPet remote script wrapped inside an AddSwitch loop
+autosellv1:AddSwitch("Auto Sell Unleashed Magic Catstar", function(state)
+    getgenv().AutoSell = state
+    
+    -- When the switch is turned ON, start a repeating loop
+    task.spawn(function()
+        while getgenv().AutoSell do
+            local args = {
+                [1] = "sellPet",
+                [2] = "Unleashed Magic Catstar"
             }
             local remote = game:GetService("ReplicatedStorage"):WaitForChild("rEvents", 3):WaitForChild("sellPetEvent", 3)
             
@@ -1481,6 +1761,600 @@ autoevolvedv1:AddSwitch("SENSEI: Legend Of Weakness", function(state)
                         if category:IsA("Folder") or category:IsA("Configuration") then
                             for _, pet in ipairs(category:GetChildren()) do
                                 if pet.Name:lower():find("sensei: legend of weakness") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Coral Bubble", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("coral bubble") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Dark Elemental Wolf", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("dark elemental wolf") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Phantom Unique Angel", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("phantom unique angel") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Master Guardian Manticore", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("master guardian manticore") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Unlimited Secrets Master Dragon", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("unlimited secrets master dragon") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve CYBER: Ancient Master Wraith", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("cyber: ancient master wraith") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Chaos Master Titan", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("chaos master titan") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Shadow Rising Hydra", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("shadow rising hydra") then
+                                    foundPet = pet
+                                    break
+                                end
+                            end
+                        end
+                        if foundPet then break end
+                    end
+                end
+                
+                if foundPet then
+                    pcall(function()
+                        -- Supports both RemoteEvent (:FireServer) and RemoteFunction (:InvokeServer)
+                        if autoEvolve:IsA("RemoteFunction") then
+                            autoEvolve:InvokeServer("evolvePet", foundPet.Name)
+                            autoEvolve:InvokeServer("evolvePet", foundPet)
+                        else
+                            autoEvolve:FireServer("evolvePet", foundPet.Name)
+                            autoEvolve:FireServer("evolvePet", foundPet)
+                        end
+                    end)
+                end
+                
+                task.wait(0.5) -- Delay between checks/evolves to avoid rate-limiting
+            end
+        end)
+    else
+    end
+end)
+
+-- Add a functional switch into the Automation tab
+autoevolvedv1:AddSwitch("Auto Evolve Relentless Titan Dragon", function(state)
+    autoEvolveEnabled = state
+    
+    if autoEvolveEnabled then
+        print("kyopal182")
+        
+        -- Run the remote function cycle safely inside a background thread
+        task.spawn(function()
+            local players = game:GetService("Players")
+            local replicatedStorage = game:GetService("ReplicatedStorage")
+            local player = players.LocalPlayer
+            
+            local remoteEvents = replicatedStorage:WaitForChild("rEvents", 5)
+            if not remoteEvents then 
+                warn("rEvents folder not found.")
+                return 
+            end
+            
+            -- Look for the evolve remote (adjust name if needed, e.g., "evolvePetEvent" or "autoEvolveRemote")
+            local autoEvolve = remoteEvents:WaitForChild("autoEvolveRemote", 5) or remoteEvents:WaitForChild("evolvePetEvent", 5)
+            if not autoEvolve then
+                warn("Evolve remote not found.")
+                return
+            end
+            
+            -- Run continuously as long as the UI switch state stays active
+            while autoEvolveEnabled do
+                local petsFolder = player:FindFirstChild("petsFolder")
+                local foundPet = nil
+                
+                if petsFolder then
+                    for _, category in ipairs(petsFolder:GetChildren()) do
+                        if not autoEvolveEnabled then break end
+                        if category:IsA("Folder") or category:IsA("Configuration") then
+                            for _, pet in ipairs(category:GetChildren()) do
+                                if pet.Name:lower():find("relentless titan dragon") then
                                     foundPet = pet
                                     break
                                 end
